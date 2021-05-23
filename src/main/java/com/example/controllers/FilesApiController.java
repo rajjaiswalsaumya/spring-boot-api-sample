@@ -1,5 +1,6 @@
 package com.example.controllers;
 
+import com.example.models.FileListModel;
 import com.example.services.ResourceLocatorService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,7 @@ public class FilesApiController {
     }
 
     @GetMapping("/list")
-    public Stream<Path> list() throws IOException {
+    public Stream<FileListModel> list() throws IOException {
         return this.resourceLocatorService.list();
     }
 }

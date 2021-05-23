@@ -1,6 +1,7 @@
 package com.example.services;
 
 import com.example.config.FileSystemConfig;
+import com.example.models.FileListModel;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -17,7 +18,7 @@ public class ResourceLocatorService {
         this.fileSystemConfig = fileSystemConfig;
     }
 
-    public Stream<Path> list() throws IOException {
-        return Files.list(Paths.get(this.fileSystemConfig.getFilesLocation()));
+    public Stream<FileListModel> list() throws IOException {
+        return Files.list(Paths.get(this.fileSystemConfig.getFilesLocation())).map(item-> new FileListModel(item.getFileName().toString(), item.toAbsolutePath()));
     }
 }
