@@ -18,3 +18,8 @@ mvn clean install spring-boot:repackage
   
 - Goto browser and type
   http://localhost:8080/files/list
+  http://localhost:8080/jobs/us/list
+  http://localhost:8080/jobs/US/list
+  http://localhost:8080/jobs/local/list
+  http://localhost:8080/jobs/LOCAL/list
+  
