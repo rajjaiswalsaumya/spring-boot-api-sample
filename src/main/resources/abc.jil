@@ -1,0 +1,8 @@
+/* ----------------------------- REPEATING_BOX ---------------------------------------------- */
+insert_job: REPEATING_BOX	job_type: BOX	command_vendor: US
+
+/* ----------------------------- REPEATING_BOX_JOB00 ---------------------------------------------- */
+insert_job: REPEATING_BOX_JOB_0	job_type: BOX	command_vendor: US
+
+/* ----------------------------- REPEATING_BOX_JOB01 ----------------------------------------- */
+insert_job: REPEATING_BOX_JOB01	job_type: CMD	command_vendor: LOCAL

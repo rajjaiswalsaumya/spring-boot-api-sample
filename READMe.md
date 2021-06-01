@@ -13,6 +13,8 @@ mvn clean install spring-boot:repackage
   touch abc.jil
   touch cde.jil
   
+- Sample file added, copy abc.jil from resources dir to user-data dir
+  
 - Run as jar 
   java -jar target/spring-boot-api-sample-0.0.1-SNAPSHOT.jar
   
